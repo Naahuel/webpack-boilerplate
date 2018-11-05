@@ -1,3 +1,8 @@
+/**
+ * This is the base configuration for webpack
+ * It will be used in all enviornments
+ */
+'use strict';
 const path                = require('path');
 const HtmlWebpackPlugin   = require('html-webpack-plugin');
 const CleanWebpackPlugin  = require('clean-webpack-plugin');
