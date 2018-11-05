@@ -22,6 +22,7 @@ The configuration is split in three different files:
 
     npm start
 Webpack will start the dev-server, open your web browser and all changes you make in your files will be automatically updated!
+![Hot reloading in action](https://i.imgur.com/FncfFt5.gif)
 
 ### Build for production
 
