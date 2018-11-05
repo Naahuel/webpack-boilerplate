@@ -8,6 +8,7 @@ Simply clone this repo or download it and start working in your `./src` folder. 
  - `src/index.html` - It's the app's HTML template!
 
 You can add all the files you want and organize them any way you like.
+You can see in the `./src` folder a very simple app that imports JS modules and SASS files for styling! When you build your app for production, a CSS and JS file will be generated and auto-imported in your HTML template!
 
 ## Config files
 The configuration is split in three different files:
