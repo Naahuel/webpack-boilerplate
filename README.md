@@ -3,7 +3,13 @@
 This repo contains a very basic setup to start with a Webpack 4 project.
 
 ## Starting
-Simply clone this repo or download it and start working in your `./src` folder.  Keep in mind that these files are required:
+
+ 1. Clone this repo or download it
+ 2. Run `npm install` to install dependencies
+ 3. Run `npm start` to start the dev-server
+ 4. Start working in your `./src` folder! 
+
+Keep in mind that these files are required:
  - `src/index.js` - It's the app's entry point!
  - `src/index.html` - It's the app's HTML template!
 
