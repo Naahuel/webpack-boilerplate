@@ -3,9 +3,10 @@
  * It will be used in all enviornments
  */
 'use strict';
-const path                = require('path');
-const HtmlWebpackPlugin   = require('html-webpack-plugin');
-const CleanWebpackPlugin  = require('clean-webpack-plugin');
+const path                 = require('path');
+const HtmlWebpackPlugin    = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CleanWebpackPlugin   = require('clean-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -13,12 +14,16 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(['dist']),
+    new MiniCssExtractPlugin({
+      filename: "css/[name].[hash].css",
+      chunkFilename: "[id].css"
+    }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
   ],
   output: {
-    filename: '[name].[hash].js',
+    filename: 'js/[name].[hash].js',
     path: path.resolve(__dirname, 'dist')
   },
   module: {
