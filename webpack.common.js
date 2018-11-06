@@ -24,21 +24,12 @@ module.exports = {
   ],
   output: {
     filename: 'js/[name].[hash].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    // Fix references to URLs: use absolute
+    publicPath: '/'
   },
   module: {
     rules: [
-      {
-        test: /\.scss$/,
-        use: [
-            // creates style nodes from JS strings
-            "style-loader",
-            // translates CSS into CommonJS
-            "css-loader",
-            // compiles Sass to CSS, using Node Sass by default
-            "sass-loader"
-        ]
-      },
       {
         test: /\.(png|jpg|gif)$/,
         use: [
@@ -46,7 +37,9 @@ module.exports = {
             // Handles image files inserted in HTML and CSS
             loader: 'file-loader',
             options: {
-              name: 'images/[name][hash].[ext]'
+              name: '[name].[hash].[ext]',
+              // Output these files in this directory
+              outputPath: "images/"
             }
           }
         ]
