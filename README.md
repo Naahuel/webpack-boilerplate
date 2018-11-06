@@ -7,7 +7,7 @@ This repo contains a very basic setup to start with a Webpack 4 project.
  1. Clone this repo or download it
  2. Run `npm install` to install dependencies
  3. Run `npm start` to start the dev-server
- 4. Start working in your `./src` folder! 
+ 4. Start working in your `./src` folder!
 
 Keep in mind that these files are required:
  - `src/index.js` - It's the app's entry point!
@@ -33,4 +33,4 @@ Webpack will start the dev-server, open your web browser and all changes you mak
 ### Build for production
 
     npm run build
-Webpack will bundle your files & assets in the `./dist` folder. Now you can use this files to deploy your app!
+Webpack will bundle your files & assets in the `./dist` folder. Your CSS will be extracted from your SASS files, autoprefixed and compressed. Your JS will be bundled up ready for production. Now you can use these files to deploy your app!
