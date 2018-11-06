@@ -46,3 +46,4 @@ Webpack will bundle your files & assets in the `./dist` folder. Your CSS will be
 ## TODO
 - Add testing support maybe?
 - Add UglifyJS
+- Add font support
