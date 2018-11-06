@@ -2,6 +2,13 @@
 
 This repo contains a very basic setup to start with a Webpack 4 project.
 
+## What it includes
+ - `webpack-dev-server` - Webpack's development server with hot reload.
+ - `sass-loader` - Compiles SCSS files to CSS (it also includes `style-loader` and `css-loader`).
+ - `autoprefixer` - Auto-prefixes your CSS rules that need auto-prefixing.
+ - `file-loader` - For images; All images included in your CSS, HTML and JS will be handled by this loader.
+ - `html-loader` - Minimizes HTML and lets other loaders parse the HTML files (for URLs, for example)
+
 ## Starting
 
  1. Clone this repo or download it
@@ -34,3 +41,8 @@ Webpack will start the dev-server, open your web browser and all changes you mak
 
     npm run build
 Webpack will bundle your files & assets in the `./dist` folder. Your CSS will be extracted from your SASS files, autoprefixed and compressed. Your JS will be bundled up ready for production. Now you can use these files to deploy your app!
+
+
+## TODO
+- Add testing support maybe?
+- Add UglifyJS
