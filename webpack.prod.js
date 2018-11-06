@@ -19,10 +19,9 @@ module.exports = merge(common, {
       rules: [{
           test: /\.scss$/,
           use: [
-              // fallback to style-loader in development
-              MiniCssExtractPlugin.loader,
-              "css-loader",
-              "sass-loader"
+              { loader: MiniCssExtractPlugin.loader },
+              { loader: "css-loader" },
+              { loader: "sass-loader", options: { outputStyle: 'compressed' }}
           ]
       }]
   }
