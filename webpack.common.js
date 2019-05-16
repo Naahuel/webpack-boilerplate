@@ -13,7 +13,7 @@ module.exports = {
     app: './src/index.js'
   },
   plugins: [
-    new CleanWebpackPlugin(['dist']),
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "css/[name].[hash].css",
       chunkFilename: "[id].css"
