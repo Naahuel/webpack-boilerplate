@@ -9,9 +9,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const CleanWebpackPlugin   = require('clean-webpack-plugin');
 
 module.exports = {
-  entry: {
-    app: './src/index.js'
-  },
+  entry: './src/index.js',
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
